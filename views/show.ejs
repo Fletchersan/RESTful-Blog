@@ -9,7 +9,10 @@
                     <p><%- blog.body %> </p>
                 </div>
             </div>
-            
+            <span><a href="/blogs/<%= blog._id %>/edit" class="ui orange basic button">Edit</a></span>
+            <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method='POST'>
+                <button class="ui button basic red">Delete</button> 
+            </form>
         </div>
     </div>
 
